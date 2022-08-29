@@ -1,0 +1,50 @@
+<script>
+
+function calc(num1,num2,num3,num4,num5,num6) {
+ return num1 +num2 +num3 +num4 +num5 +num6;
+}
+let sum=calc(5,4,3,2,1,0);
+console.log(sum);
+
+
+function onr(n){
+
+if(n==1) return 1;
+return n *onr(n-1);
+}
+console.log( onr(4));
+
+
+function clone(str, num) {
+
+if(num===0)
+{
+  return "";
+}
+
+if(num === 1){
+  return str;
+}
+return str + clone(str,num-1);
+}
+console.log(clone("to ", 3));
+
+
+
+
+
+
+
+function sum2(x, y) {
+        if(x <= y){
+            return x + sum2(x+1,y);
+        }else{
+            return 0;
+        }
+    
+    
+    }console.log(sum2(4, 5))
+    console.log(sum2(3, 6))
+
+
+</script>
